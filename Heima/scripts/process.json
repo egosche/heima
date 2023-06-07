@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "frontend",
+      "cwd": "./frontend",
+      "script": "npm",
+      "args": "start"
+    },
+    {
+      "name": "backend",
+      "script": "./backend/index.js"
+    }
+  ]
+}

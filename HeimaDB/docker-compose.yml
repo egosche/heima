@@ -1,0 +1,22 @@
+version: '3'
+services:
+    heimadb:
+        container_name: heimadb
+        image: heimadb-image
+        command: ['mysqld', '--default-authentication-plugin=mysql_native_password' ,'--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+        environment: 
+            MYSQL_ROOT_PASSWORD: mysql008
+        ports:
+            - "3307:3306"
+    heima:
+        container_name: heima
+        image: heima-image
+        ports:
+            - "3000:3000"
+            - "3001:3001"
+        environment:
+            - ACCESS_TOKEN_SECRET=95c7889e66110446fd6f786978fca8f98c661d7dbd1b285b4e50b6a2a1a08dd2875e2439cd5ec9ec29299c2293b8e6a9eed3d32b0cd7caf15cc600ce8e7b7460
+            - REFRESH_TOKEN_SECRET=526919c3f7a9d72dd5fb28c22587ab3088b57fe52e09678caddd88e95ac60b112640130c80f1e4a8be072f845e2b992de8351233f05244b60394a580c332215a
+        depends_on: 
+            - heimadb
+    

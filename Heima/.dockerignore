@@ -1,0 +1,9 @@
+# Let docker ignore those files in ADD and COPY instructions.
+# Instead, use the package managers function to resolve dependencies.
+
+*/node_modules
+*/yarn.lock
+*/package-lock.json
+*/.git
+*/.gitignore
+*/dist

@@ -1,0 +1,36 @@
+.bilderreihe {
+    width: 100%;
+    position: relative;
+    bottom: 50%;
+    left: 20%;
+}
+.spalte {
+    float: left;
+    width: 15%;
+    padding: 2px;
+}
+
+.bilderreihe::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Größe des Anmeldebuttons und der Feldgröße(weißer Raum des Buttons) zur Schrift, Rahmen(dünn und schwarz) und Position(obere rechte Ecke)*/
+#anmelden {
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right:15px;
+}
+
+/*fährt ein Mauszeiger über den Anmeldebutton, verändert er die Farbe*/
+#anmelden:hover{
+    background-color: aquamarine;
+}
+
+/*Farbe der ganzen Seite*/
+body {
+    background-color:#cbd5e0;
+}
+
