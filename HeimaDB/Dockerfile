@@ -8,3 +8,4 @@ ENV MYSQL_PASSWORD Astral
 
 # Copy scripts where they'll be executed during startup
 COPY ./scripts /docker-entrypoint-initdb.d/
+RUN chown -R mysql:mysql /docker-entrypoint-initdb.d/
