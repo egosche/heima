@@ -2,7 +2,7 @@
 <p align="center">
     <img
       alt="Heima"
-      src="https://github.com/EGoesche/apm/blob/master/Resources/Heima_landing_page.png"
+      src="Resources/Heima_landing_page.png"
       width="300"
     />
 </p>
@@ -11,6 +11,14 @@
 
 Heima is Icelandic and means 'home'. Heima allows users to rent out their own accommodations to other users. It is a web app that consists of a React frontend and NodeJS backend. MySQL is used as the database.
 Note: This project was developed in the context of a student research project. The project has several critical security vulnerabilities. It is not intended for productive use.
+
+<p align="center">
+    <img
+      alt="Heima"
+      src="Resources/Heima_search.png"
+      width="300"
+    />
+</p>
 
 ## Overview
 
